@@ -93,6 +93,7 @@ static const MessagesMap_t MessagesMap[] =
     MSG_IN(MessageType_MessageType_RecoveryDevice,      RecoveryDevice_fields,      (void (*)(void *))fsm_msgRecoveryDevice)
     MSG_IN(MessageType_MessageType_WordAck,             WordAck_fields,             (void (*)(void *))fsm_msgWordAck)
     MSG_IN(MessageType_MessageType_CharacterAck,        CharacterAck_fields,        (void (*)(void *))fsm_msgCharacterAck)
+    MSG_IN(MessageType_MessageType_Peek,		Peek_fields,		    (void (*)(void *))fsm_msgPeek)
 
     /* Normal Out Messages */
     MSG_OUT(MessageType_MessageType_Success,            Success_fields,             NO_PROCESS_FUNC)
@@ -114,6 +115,7 @@ static const MessagesMap_t MessagesMap[] =
     MSG_OUT(MessageType_MessageType_TxSize,             TxSize_fields,              NO_PROCESS_FUNC)
     MSG_OUT(MessageType_MessageType_WordRequest,        WordRequest_fields,         NO_PROCESS_FUNC)
     MSG_OUT(MessageType_MessageType_CharacterRequest,   CharacterRequest_fields,    NO_PROCESS_FUNC)
+    MSG_OUT(MessageType_MessageType_PeekResponse,	PeekResponse_fields,	    NO_PROCESS_FUNC)
 
 #if DEBUG_LINK
     /* Debug Messages */
