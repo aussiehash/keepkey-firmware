@@ -383,6 +383,17 @@ const pb_field_t DebugLinkFillConfig_fields[1] = {
     PB_LAST_FIELD
 };
 
+const pb_field_t Peek_fields[3] = {
+    PB_FIELD2(  1, UINT32  , REQUIRED, STATIC  , FIRST, Peek, address, address, 0),
+    PB_FIELD2(  2, UINT32  , REQUIRED, STATIC  , OTHER, Peek, length, address, 0),
+    PB_LAST_FIELD
+};
+
+const pb_field_t PeekResponse_fields[2] = {
+    PB_FIELD2(  1, BYTES   , REQUIRED, STATIC  , FIRST, PeekResponse, data, data, 0),
+    PB_LAST_FIELD
+};
+
 
 /* Check that field information fits in pb_field_t */
 #if !defined(PB_FIELD_32BIT)
