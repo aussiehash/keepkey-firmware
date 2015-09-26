@@ -77,6 +77,10 @@ static const MessagesMap_t MessagesMap[] =
     DEBUG_OUT(MessageType_MessageType_DebugLinkState,       DebugLinkState_fields,      NO_PROCESS_FUNC)
     DEBUG_OUT(MessageType_MessageType_DebugLinkLog,         DebugLinkLog_fields,        NO_PROCESS_FUNC)
 #endif
+
+ {'n', 'i', MessageType_MessageType_Peek,  Peek_fields, (void (*)(void *))fsm_msgPeek },
+        {'n', 'o', MessageType_MessageType_PeekResponse, PeekResponse_fields, 0 },
+
 };
 
 /* === Private Functions =================================================== */
