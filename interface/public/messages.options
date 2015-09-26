@@ -118,3 +118,4 @@ DebugLinkState.storage_hash    max_size:32
 
 DebugLinkLog.bucket			max_size:33
 DebugLinkLog.text			max_size:256
+PeekResponse.data			max_size:1024
