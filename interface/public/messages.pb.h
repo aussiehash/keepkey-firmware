@@ -746,6 +746,8 @@ extern const char SimpleSignTx_coin_name_default[17];
 #define DebugLinkStop_init_default               {0}
 #define DebugLinkLog_init_default                {false, 0, false, "", false, ""}
 #define DebugLinkFillConfig_init_default         {0}
+#define Peek_init_default                        {0, 0}
+#define PeekResponse_init_default                {{0, {0}}}
 #define Initialize_init_zero                     {0}
 #define GetFeatures_init_zero                    {0}
 #define Features_init_zero                       {false, "", false, 0, false, 0, false, 0, false, 0, false, "", false, 0, false, 0, false, "", false, "", 0, {CoinType_init_zero, CoinType_init_zero, CoinType_init_zero, CoinType_init_zero, CoinType_init_zero, CoinType_init_zero}, false, 0, false, {0, {0}}, false, {0, {0}}, false, 0, false, 0, false, 0}
@@ -803,6 +805,8 @@ extern const char SimpleSignTx_coin_name_default[17];
 #define DebugLinkStop_init_zero                  {0}
 #define DebugLinkLog_init_zero                   {false, 0, false, "", false, ""}
 #define DebugLinkFillConfig_init_zero            {0}
+#define Peek_init_zero                           {0, 0}
+#define PeekResponse_init_zero                   {{0, {0}}}
 
 /* Field tags (for use in manual encoding/decoding) */
 #define Address_address_tag                      1
